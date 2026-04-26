@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anusha-Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(230, 82, 238);
+        font-size: 1.06rem;
+      }
+
+      main hr{
+        border:0;
+        background:#9c97f1;
+        height: 1.2px;
+        margin:60px 84px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2.75rem;
+        margin: 70px 0;
+      }
+
+      .rightsection img {
+        width: 80%;
+      }
+
+      .purple {
+        color: rgb(153, 78, 222);
+      }
+
+      #element {
+        color: rgb(153, 78, 222);
+      }
+      .secondsection{
+        max-width:80vw;
+        margin: auto;  
+      }
+      .secondsection hr{
+        font-size:1.6rem;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Anusha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#projects"> Projects</a></li>
+            <li><a href="#contact"> Contact Me</a></li>
+            <li><a href="#service"> Service</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, I'm <span class="purple">Anusha.</span>
+          <div>And I am a Aspiring</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" />
+        </div>
+      </section>
+    
+<hr>
+      <section class="secondsection">
+        <h1>Work Experiences</h1>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer And App Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
